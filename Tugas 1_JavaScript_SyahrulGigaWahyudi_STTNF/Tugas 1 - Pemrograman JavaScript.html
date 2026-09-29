@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1 - Menghitung Luas Bangun Datar</title>
+</head>
+<body>
+    <h1>Tugas 1 - Pemrograman JavaScript</h1>
+    <p>Menghitung luas dari persegi panjang, bujur sangkar dan segitiga menggunakan variabel dan operator.</p>
+
+    <hr>
+
+    <script>
+       
+        // FUNGSI 1: Menghitung Luas Persegi Panjang
+        // Rumus: Luas = Panjang * Lebar
+
+        function hitungLuasPersegiPanjang(panjang, lebar) {
+            let luas = panjang * lebar; // Operator perkalian (*)
+            return luas;
+        }
+
+        // FUNGSI 2: Menghitung Luas Bujur Sangkar (Persegi)
+        // Rumus: Luas = Sisi * Sisi
+        function hitungLuasBujurSangkar(sisi) {
+            let luas = sisi * sisi; // Operator perkalian (*)
+            return luas;
+        }
+
+        // FUNGSI 3: Menghitung Luas Segitiga
+        // Rumus: Luas = 0.5 * Alas * Tinggi
+        function hitungLuasSegitiga(alas, tinggi) {
+            let luas = 0.5 * alas * tinggi; // Operator perkalian (*)
+            return luas;
+        }
+
+        // EKSEKUSI & DEKLARASI VARIABEL PARAMETER (NILAI BEBAS
+
+
+        // 1. Persegi Panjang
+        const p = 10; // Variabel panjang
+        const l = 5;  // Variabel lebar
+        const luasPersegiPanjang = hitungLuasPersegiPanjang(p, l);
+
+        // 2. Bujur Sangkar
+        const s = 6;  // Variabel sisi
+        const luasBujurSangkar = hitungLuasBujurSangkar(s);
+
+        // 3. Segitiga
+        const a = 8;  // Variabel alas
+        const t = 12; // Variabel tinggi
+        const luasSegitiga = hitungLuasSegitiga(a, t);
+
+        // MENAMPILKAN HASIL PADA HALAMAN WEB
+
+        document.write("<h2>Hasil Perhitungan:</h2>");
+        document.write("<p><b>1. Luas Persegi Panjang:</b> " + luasPersegiPanjang + " (Panjang: " + p + ", Lebar: " + l + ")</p>");
+        document.write("<p><b>2. Luas Bujur Sangkar:</b> " + luasBujurSangkar + " (Sisi: " + s + ")</p>");
+        document.write("<p><b>3. Luas Segitiga:</b> " + luasSegitiga + " (Alas: " + a + ", Tinggi: " + t + ")</p>");
+    </script>
+</body>
+</html>
